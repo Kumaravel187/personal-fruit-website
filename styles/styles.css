@@ -17,4 +17,46 @@ html {
 body {
   margin: 0; /* Remove default margin to avoid unexpected spacing */
   padding: 0; /* Vertical and horizontal padding for the content area */
+  font-family: "Ubuntu", sans-serif;
+  min-height: 100vh;
+}
+
+img {
+  width: 2rem;
+  height: 2rem;
+}
+
+nav {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-links {
+  width: 22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-links__product li, nav .nav-links__utility li {
+  display: inline;
+}
+nav .nav-links__product li:last-child, nav .nav-links__utility li:last-child {
+  margin-left: 1.25rem;
+}
+nav .nav-links__product li a, nav .nav-links__utility li a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+@media (min-width: 56.25rem) {
+  nav {
+    padding: 1rem 10rem;
+  }
+  nav .nav-links {
+    justify-content: space-evenly;
+    width: 50rem;
+  }
+  nav .nav-links__product li:last-child, nav .nav-links__utility li:last-child {
+    margin-left: 3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
