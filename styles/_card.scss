@@ -1,0 +1,110 @@
+.card {
+  &__header {
+    margin: 1rem 0;
+    text-align: center;
+
+    h2 {
+      font-size: 1.8rem;
+      line-height: 1.6;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  .card__panel {
+    flex-direction: column;
+
+    &__item {
+      padding: 1rem 0;
+      align-items: center;
+      img {
+        width: 8rem;
+        height: 8rem;
+      }
+
+      &:last-child {
+        margin-top: 1rem;
+        flex-direction: row-reverse;
+      }
+
+      .fruit {
+        p {
+          margin-top: 1rem;
+          text-align: center;
+        }
+      }
+
+      .fruit_description {
+        margin: 0 1rem;
+
+        p {
+          font-size: 0.75rem;
+          font-weight: 700;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .card {
+    &__header {
+      margin: 1rem 0;
+      text-align: center;
+
+      h2 {
+        font-size: 1.8rem;
+        line-height: 1.6;
+
+        span {
+          color: $orange;
+        }
+      }
+
+      p {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+      }
+    }
+
+    .card__panel {
+      flex-direction: row;
+
+      &__item {
+        flex-direction: column;
+        border-radius: 1rem;
+        border: 1px solid whitesmoke;
+        -webkit-box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
+
+        &:last-child {
+          margin-left: 1rem;
+          flex-direction: column;
+          border: none;
+          box-shadow: none;
+        }
+
+        .fruit {
+          p {
+            margin: 1rem 0;
+          }
+        }
+
+        .fruit_description {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

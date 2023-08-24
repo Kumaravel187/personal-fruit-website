@@ -1,4 +1,5 @@
 nav {
+  background-color: black;
   img {
     width: 2rem;
     height: 2rem;
@@ -9,6 +10,7 @@ nav {
   .links__product,
   .links__utility {
     display: inline-block;
+    color: $orange;
   }
 
   .container {
