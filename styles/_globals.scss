@@ -19,15 +19,52 @@ body {
   margin: 0; /* Remove default margin to avoid unexpected spacing */
   padding: 0; /* Vertical and horizontal padding for the content area */
   //   font-family: ; /* Set the primary font family */
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   min-height: 100vh;
+  line-height: 1.3;
+  background-color: whitesmoke;
 }
 
-img {
-  width: 2rem;
-  height: 2rem;
+a {
+  text-decoration: none;
 }
 
-// .pad {
-//   padding: 1rem;
-// }
+li {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-jc-sp {
+  justify-content: space-between;
+}
+
+.flex-ac {
+  align-items: center;
+}
+
+.br {
+  border: 1px solid red;
+}
+
+.bb {
+  border: 1px solid blue;
+}
+
+nav,
+main,
+footer {
+  padding: 0 2rem;
+}
+
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
