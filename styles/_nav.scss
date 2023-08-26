@@ -7,7 +7,6 @@ nav {
 
   li,
   a,
-  .links__product,
   .links__utility {
     display: inline-block;
     color: $orange;
@@ -15,14 +14,11 @@ nav {
 
   .container {
     .links {
-      width: 70%;
-
-      &__product,
       &__utility {
         li {
           cursor: pointer;
           &:last-child {
-            margin-left: 1rem;
+            margin-left: 2rem;
           }
         }
       }
@@ -34,7 +30,6 @@ nav {
   nav {
     .container {
       .links {
-        &__product,
         &__utility {
           li {
             &:last-child {

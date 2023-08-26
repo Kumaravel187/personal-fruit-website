@@ -1,20 +1,12 @@
 footer {
   background-color: black;
+  margin-top: 2rem;
 
   .container {
     text-align: center;
-    padding: 1rem 0;
 
     a {
       color: $orange;
-    }
-  }
-}
-
-@media (min-width: 56.25rem) {
-  footer {
-    .container {
-      margin-top: 2rem;
     }
   }
 }
