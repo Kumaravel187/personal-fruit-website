@@ -40,7 +40,7 @@ todo-app/
 
 ## Links
 
-Project URL:
+Project URL: https://resonant-dieffenbachia-d4974f.netlify.app
 
 ## Contributing
 
