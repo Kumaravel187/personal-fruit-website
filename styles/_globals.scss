@@ -1,37 +1,44 @@
-/* Set the base styling for the entire HTML document */
+/* Base styling for the entire HTML document */
+
 html {
   box-sizing: border-box;
   font-size: 100%; /* Reset font size for consistent sizing */
 }
 
-/* Apply the 'box-sizing' property to all elements and their pseudo-elements */
+/* Apply 'box-sizing' property to all elements and their pseudo-elements */
+
 *,
 *::before,
 *::after {
-  box-sizing: inherit; /* Inherit the 'box-sizing' property from the parent */
+  box-sizing: inherit; /* Inherit 'box-sizing' property from parent */
   margin: 0;
   padding: 0;
 }
 
-/* Basic styling for the body of the webpage */
+/* Basic styling for the webpage body */
+
 body {
-  // min-height: 100vh; /* Ensure the body covers at least the viewport height */
-  margin: 0; /* Remove default margin to avoid unexpected spacing */
-  padding: 0; /* Vertical and horizontal padding for the content area */
-  //   font-family: ; /* Set the primary font family */
-  font-family: "Nunito Sans", sans-serif;
-  min-height: 100vh;
+  margin: 0; /* Remove default margin for consistent spacing */
+  padding: 0; /* Vertical and horizontal padding for content area */
+  font-family: "Nunito Sans", sans-serif; /* Set primary font family */
+  min-height: 100vh; /* Ensure body covers at least viewport height */
   line-height: 1.3;
   background-color: whitesmoke;
 }
+
+/* Remove default text decoration from links */
 
 a {
   text-decoration: none;
 }
 
+/* Remove list-style from list items */
+
 li {
   list-style-type: none;
 }
+
+/* Flexbox utility classes */
 
 .flex {
   display: flex;
@@ -49,6 +56,8 @@ li {
   align-items: center;
 }
 
+/* Border utility classes for debugging */
+
 .br {
   border: 1px solid red;
 }
@@ -57,16 +66,22 @@ li {
   border: 1px solid blue;
 }
 
+/* Styling for navigation and footer */
+
 nav,
 footer {
   padding: 1rem 2rem;
 }
 
+/* Wrapper for content with maximum width */
+
 .wrapper {
   max-width: 50rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto; /* Center content horizontally */
 }
+
+/* Text alignment utility class */
 
 .tar {
   text-align: right;

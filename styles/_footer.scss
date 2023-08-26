@@ -1,12 +1,16 @@
+/* Styling for the footer section */
+
 footer {
   background-color: black;
   margin-top: 2rem;
 
+  /* Styles for the content container within the footer */
   .container {
     text-align: center;
 
+    /* Style for links within the container */
     a {
-      color: $orange;
+      color: $orange; /* Assuming $orange is a variable for the desired color */
     }
   }
 }

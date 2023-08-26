@@ -1,22 +1,32 @@
+/* Styling for the navigation bar */
+
 nav {
   background-color: black;
+
+  /* Styling for images within the navigation */
   img {
     width: 2rem;
     height: 2rem;
   }
 
+  /* Styling for list items, links, and utility links within the navigation */
   li,
   a,
   .links__utility {
     display: inline-block;
-    color: $orange;
+    color: $orange; /* Assuming $orange is a variable for the desired color */
   }
 
+  /* Styles within the navigation container */
   .container {
+    /* Styles for the links section */
     .links {
+      /* Styles for the utility links section */
       &__utility {
+        /* Styles for list items within the utility links */
         li {
           cursor: pointer;
+          /* Margin adjustment for the last utility link */
           &:last-child {
             margin-left: 2rem;
           }
@@ -26,12 +36,18 @@ nav {
   }
 }
 
+/* Media query for larger screens */
 @media (min-width: 56.25rem) {
   nav {
+    /* Styles within the navigation container */
     .container {
+      /* Styles for the links section */
       .links {
+        /* Styles for the utility links section */
         &__utility {
+          /* Styles for list items within the utility links */
           li {
+            /* Margin adjustment for the last utility link on larger screens */
             &:last-child {
               margin-left: 3rem;
             }

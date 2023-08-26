@@ -1,23 +1,30 @@
+/* Styling for the main content section */
+
 main {
   margin-top: 2rem;
+
+  /* Styles for the description container */
   .desc {
     flex-direction: column;
 
+    /* Styles for the description text content */
     .description {
       width: 100%;
-
       text-align: center;
 
+      /* Style for the description heading */
       &__heading {
         font-size: 2rem;
         margin-bottom: 1rem;
 
+        /* Apply color and font weight to a span within the heading */
         span {
-          color: $orange;
+          color: $orange; /* Assuming $orange is a variable for the desired color */
           font-weight: bold;
         }
       }
 
+      /* Style for the description paragraphs */
       &__para {
         font-size: 1.25rem;
         line-height: 1.4;
@@ -25,11 +32,13 @@ main {
         margin-bottom: 1rem;
       }
 
+      /* Style for the description button section */
       &__btn {
         font-size: 0.75rem;
         margin-bottom: 1rem;
         justify-content: space-evenly;
 
+        /* Style for the buttons within the button section */
         button {
           font-family: "Nunito Sans", sans-serif;
           border-radius: 2rem;
@@ -40,6 +49,7 @@ main {
           transition: all 0.3s ease-in-out;
           cursor: pointer;
 
+          /* Button hover effect */
           &:hover {
             background-color: #fff;
             border: 2px solid $orange;
@@ -48,11 +58,14 @@ main {
         }
       }
 
+      /* Style for smaller text within the description */
       &__small {
         font-size: 0.8rem;
         margin-bottom: 1rem;
       }
     }
+
+    /* Style for the description image */
     .description__image {
       margin-top: 1rem;
       width: 100%;
@@ -65,39 +78,52 @@ main {
   }
 }
 
+/* Media query for larger screens */
 @media (min-width: 56.25rem) {
   main {
     margin-top: 3rem;
+
+    /* Adjusted styles for the description container */
     .desc {
       flex-direction: row;
 
+      /* Adjusted styles for the description text content */
       .description {
         padding: 0 1rem;
         flex: 1;
         margin-top: 0rem;
         text-align: left;
 
+        /* Adjusted style for the description heading */
         &__heading {
           font-size: 3rem;
         }
 
+        /* Adjusted style for the description paragraphs */
         &__para {
           font-size: 1rem;
         }
 
+        /* Adjusted style for the description button section */
         &__btn {
           justify-content: start;
 
+          /* Button style adjustments */
           button {
+            /* Button shadow effect */
             -webkit-box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
             -moz-box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
+
+            /* Margin adjustment for the last button */
             &:last-child {
               margin-left: 1rem;
             }
           }
         }
       }
+
+      /* Adjusted style for the description image */
       .description__image {
         margin-top: auto 0;
         flex: 1;

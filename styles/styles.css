@@ -1,36 +1,39 @@
-/* Set the base styling for the entire HTML document */
+/* Base styling for the entire HTML document */
 html {
   box-sizing: border-box;
   font-size: 100%; /* Reset font size for consistent sizing */
 }
 
-/* Apply the 'box-sizing' property to all elements and their pseudo-elements */
+/* Apply 'box-sizing' property to all elements and their pseudo-elements */
 *,
 *::before,
 *::after {
-  box-sizing: inherit; /* Inherit the 'box-sizing' property from the parent */
+  box-sizing: inherit; /* Inherit 'box-sizing' property from parent */
   margin: 0;
   padding: 0;
 }
 
-/* Basic styling for the body of the webpage */
+/* Basic styling for the webpage body */
 body {
-  margin: 0; /* Remove default margin to avoid unexpected spacing */
-  padding: 0; /* Vertical and horizontal padding for the content area */
-  font-family: "Nunito Sans", sans-serif;
-  min-height: 100vh;
+  margin: 0; /* Remove default margin for consistent spacing */
+  padding: 0; /* Vertical and horizontal padding for content area */
+  font-family: "Nunito Sans", sans-serif; /* Set primary font family */
+  min-height: 100vh; /* Ensure body covers at least viewport height */
   line-height: 1.3;
   background-color: whitesmoke;
 }
 
+/* Remove default text decoration from links */
 a {
   text-decoration: none;
 }
 
+/* Remove list-style from list items */
 li {
   list-style-type: none;
 }
 
+/* Flexbox utility classes */
 .flex {
   display: flex;
 }
@@ -47,6 +50,7 @@ li {
   align-items: center;
 }
 
+/* Border utility classes for debugging */
 .br {
   border: 1px solid red;
 }
@@ -55,23 +59,30 @@ li {
   border: 1px solid blue;
 }
 
+/* Styling for navigation and footer */
 nav,
 footer {
   padding: 1rem 2rem;
 }
 
+/* Wrapper for content with maximum width */
 .wrapper {
   max-width: 50rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto; /* Center content horizontally */
 }
 
+/* Text alignment utility class */
 .tar {
   text-align: right;
 }
 
+/* Styling for the navigation bar */
 nav {
   background-color: black;
+  /* Styling for images within the navigation */
+  /* Styling for list items, links, and utility links within the navigation */
+  /* Styles within the navigation container */
 }
 nav img {
   width: 2rem;
@@ -81,36 +92,71 @@ nav li,
 nav a,
 nav .links__utility {
   display: inline-block;
-  color: #fc6240;
+  color: #fc6240; /* Assuming $orange is a variable for the desired color */
+}
+nav .container {
+  /* Styles for the links section */
+}
+nav .container .links {
+  /* Styles for the utility links section */
+}
+nav .container .links__utility {
+  /* Styles for list items within the utility links */
 }
 nav .container .links__utility li {
   cursor: pointer;
+  /* Margin adjustment for the last utility link */
 }
 nav .container .links__utility li:last-child {
   margin-left: 2rem;
 }
 
+/* Media query for larger screens */
 @media (min-width: 56.25rem) {
+  nav {
+    /* Styles within the navigation container */
+  }
+  nav .container {
+    /* Styles for the links section */
+  }
+  nav .container .links {
+    /* Styles for the utility links section */
+  }
+  nav .container .links__utility {
+    /* Styles for list items within the utility links */
+  }
+  nav .container .links__utility li {
+    /* Margin adjustment for the last utility link on larger screens */
+  }
   nav .container .links__utility li:last-child {
     margin-left: 3rem;
   }
 }
+/* Styling for the main content section */
 main {
   margin-top: 2rem;
+  /* Styles for the description container */
 }
 main .desc {
   flex-direction: column;
+  /* Styles for the description text content */
+  /* Style for the description image */
 }
 main .desc .description {
   width: 100%;
   text-align: center;
+  /* Style for the description heading */
+  /* Style for the description paragraphs */
+  /* Style for the description button section */
+  /* Style for smaller text within the description */
 }
 main .desc .description__heading {
   font-size: 2rem;
   margin-bottom: 1rem;
+  /* Apply color and font weight to a span within the heading */
 }
 main .desc .description__heading span {
-  color: #fc6240;
+  color: #fc6240; /* Assuming $orange is a variable for the desired color */
   font-weight: bold;
 }
 main .desc .description__para {
@@ -123,6 +169,7 @@ main .desc .description__btn {
   font-size: 0.75rem;
   margin-bottom: 1rem;
   justify-content: space-evenly;
+  /* Style for the buttons within the button section */
 }
 main .desc .description__btn button {
   font-family: "Nunito Sans", sans-serif;
@@ -133,6 +180,7 @@ main .desc .description__btn button {
   padding: 0.5rem 1rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  /* Button hover effect */
 }
 main .desc .description__btn button:hover {
   background-color: #fff;
@@ -153,18 +201,25 @@ main .desc .description__image {
   background-repeat: no-repeat;
 }
 
+/* Media query for larger screens */
 @media (min-width: 56.25rem) {
   main {
     margin-top: 3rem;
+    /* Adjusted styles for the description container */
   }
   main .desc {
     flex-direction: row;
+    /* Adjusted styles for the description text content */
+    /* Adjusted style for the description image */
   }
   main .desc .description {
     padding: 0 1rem;
     flex: 1;
     margin-top: 0rem;
     text-align: left;
+    /* Adjusted style for the description heading */
+    /* Adjusted style for the description paragraphs */
+    /* Adjusted style for the description button section */
   }
   main .desc .description__heading {
     font-size: 3rem;
@@ -174,9 +229,12 @@ main .desc .description__image {
   }
   main .desc .description__btn {
     justify-content: start;
+    /* Button style adjustments */
   }
   main .desc .description__btn button {
+    /* Button shadow effect */
     box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
+    /* Margin adjustment for the last button */
   }
   main .desc .description__btn button:last-child {
     margin-left: 1rem;
@@ -190,13 +248,20 @@ main .desc .description__image {
     border-bottom-right-radius: 0rem;
   }
 }
+/* Define styles for a card component */
+.card {
+  /* Style for the card panel */
+}
 .card__header {
   margin: 1rem 0;
   text-align: center;
+  /* Style for the card header title */
+  /* Style for the paragraph within the card header */
 }
 .card__header h2 {
   font-size: 1.8rem;
   line-height: 1.6;
+  /* Apply color to a specific span within the title */
 }
 .card__header h2 span {
   color: #fc6240;
@@ -207,10 +272,15 @@ main .desc .description__image {
 }
 .card .card__panel {
   flex-direction: column;
+  /* Style for each item within the card panel */
 }
 .card .card__panel__item {
   padding: 1rem 0;
   align-items: center;
+  /* Style for images within the card item */
+  /* Apply styles to the last item within the panel */
+  /* Styles for the "fruit" class within the card item */
+  /* Styles for the "fruit_description" class within the card item */
 }
 .card .card__panel__item img {
   width: 8rem;
@@ -226,6 +296,7 @@ main .desc .description__image {
 }
 .card .card__panel__item .fruit_description {
   margin: 0 1rem;
+  /* Style for paragraphs within the "fruit_description" class */
 }
 .card .card__panel__item .fruit_description p {
   font-size: 0.75rem;
@@ -233,10 +304,15 @@ main .desc .description__image {
   line-height: 1.4;
 }
 
+/* Media query for larger screens */
 @media (min-width: 56.25rem) {
+  .card {
+    /* Adjusted styles for the card panel in larger screens */
+  }
   .card__header {
     margin: 1rem 0;
     text-align: center;
+    /* Same style as before for the card header title and paragraph */
   }
   .card__header h2 {
     font-size: 1.8rem;
@@ -251,12 +327,16 @@ main .desc .description__image {
   }
   .card .card__panel {
     flex-direction: row;
+    /* Style for each item within the card panel */
   }
   .card .card__panel__item {
     flex-direction: column;
     border-radius: 1rem;
     border: 1px solid whitesmoke;
     box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
+    /* Styles for the last item within the panel */
+    /* Styles for the "fruit" class within the card item */
+    /* Styles for the "fruit_description" class within the card item */
   }
   .card .card__panel__item:last-child {
     margin-left: 1rem;
@@ -271,13 +351,16 @@ main .desc .description__image {
     text-align: center;
   }
 }
+/* Styling for the footer section */
 footer {
   background-color: black;
   margin-top: 2rem;
+  /* Styles for the content container within the footer */
 }
 footer .container {
   text-align: center;
+  /* Style for links within the container */
 }
 footer .container a {
-  color: #fc6240;
+  color: #fc6240; /* Assuming $orange is a variable for the desired color */
 }/*# sourceMappingURL=styles.css.map */
